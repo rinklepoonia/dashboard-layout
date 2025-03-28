@@ -1,26 +1,25 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-light-green: #365E71;
+  --text-custom-xsm: 10px;
+  --background-gradient: linear-gradient(55.27deg,
+      #CCF9FF -95.26%,
+      #55D0FF -28.01%,
+      #7CE8FF -2.92%,
+      #00ACDF 82.8%,
+      #0080BF 104.02%);
+  --background-image: url-['../images/png/grident-bg.png']
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+@layer utilities {
+  .bg-blue-gradient {
+    background: var(--background-gradient);
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  .bg-mainHero{
+    background: var();
+  }
 }
