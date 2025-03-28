@@ -11,7 +11,7 @@
       #7CE8FF -2.92%,
       #00ACDF 82.8%,
       #0080BF 104.02%);
-  --background-image: url-['../images/png/grident-bg.png']
+  --background-image: url('/assets/images/png/grident-bg.png');
 }
 
 
@@ -19,7 +19,11 @@
   .bg-blue-gradient {
     background: var(--background-gradient);
   }
-  .bg-mainHero{
-    background: var();
+
+  .bg-mainHero {
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
