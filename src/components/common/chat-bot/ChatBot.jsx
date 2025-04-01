@@ -6,7 +6,7 @@ import BotNav from './BotNav'
 const ChatBot = () => {
     const { isChatbotOpen } = useStore()
 
-    // if (!isChatbotOpen) return null
+    if (!isChatbotOpen) return null
 
     return (
         <div className="fixed bottom-4 right-4 w-96 bg-black rounded-lg shadow-xl overflow-hidden">
