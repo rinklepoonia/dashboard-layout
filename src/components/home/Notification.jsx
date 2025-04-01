@@ -3,7 +3,8 @@ import React from 'react'
 const Notification = () => {
   return (
     <div>
-       home click
+      home click
+      
     </div>
   )
 }

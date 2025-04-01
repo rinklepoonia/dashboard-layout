@@ -26,7 +26,7 @@ const Icons = ({ icon, className = "", ...props }) => {
             </svg>
 
         ),
-        fileTune:(
+        fileTune: (
             <svg width="31" height="33" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.6039 32H4.8868C2.74017 32 0.999983 30.2651 1 28.125L1.00015 4.87498C1.00016 2.73489 2.74035 1 4.88697 1H22.3781C24.5248 1 26.2649 2.7349 26.2649 4.87501V12.625M7.80254 8.75002H19.463M7.80254 14.5625H19.463M7.80254 20.3751H13.6328" stroke="#365E71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 <path d="M30 25.9865L25.1631 31.2106L20.3262 25.9865M30 18.1504L25.1631 23.3745L20.3262 18.1504" stroke="#365E71" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -59,7 +59,14 @@ const Icons = ({ icon, className = "", ...props }) => {
 
 
         ),
-      
+        alertClose: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.9219 22C17.4219 22 21.9219 17.5 21.9219 12C21.9219 6.5 17.4219 2 11.9219 2C6.42188 2 1.92188 6.5 1.92188 12C1.92187 17.5 6.42188 22 11.9219 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7.92188 12H15.9219" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+        )
+
 
     };
     return icon && iconsList[icon];

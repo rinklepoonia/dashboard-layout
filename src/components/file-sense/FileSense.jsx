@@ -1,8 +1,11 @@
 import React from 'react'
+import BotNav from '../common/chat-bot/BotNav'
 
 const FileSense = () => {
   return (
-    <div>FileSense</div>
+    <div>FileSense
+      <BotNav/>
+    </div>
   )
 }
 
