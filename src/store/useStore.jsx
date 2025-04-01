@@ -14,14 +14,24 @@ import { create } from "zustand";
 // };
 
 const useStore = create((set) => ({
+    // Navigation state
+    activeComponent: 'home',
+    setActiveComponent: (component) => set({ activeComponent: component }),
+
+    // Chatbot state
     isChatbotOpen: false,
     setIsChatbotOpen: (bot) => set({ isChatbotOpen: bot }),
 
-    userDetails: loadUserDetails(),
+    // User details state
+    userDetails: typeof window !== "undefined"
+        ? JSON.parse(localStorage.getItem('userDetails') || '{}')
+        : {},
     setUserDetails: (details) =>
         set((state) => {
             const updatedDetails = { ...state.userDetails, ...details };
-            localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updatedDetails));
+            if (typeof window !== "undefined") {
+                localStorage.setItem('userDetails', JSON.stringify(updatedDetails));
+            }
             return { userDetails: updatedDetails };
         }),
 }));
