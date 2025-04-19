@@ -1,3 +1,4 @@
+import Mainlayout from "@/components/common/components/layouts/Mainlayout";
 import "./globals.css";
 import ChatBot from '@/components/common/chat-bot/ChatBot'
 
@@ -11,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div>
-          {children}
+          <Mainlayout>{children }</Mainlayout>
         </div>
         <ChatBot />
       </body>

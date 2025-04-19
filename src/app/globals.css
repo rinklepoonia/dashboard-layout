@@ -1,17 +1,119 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap');
 
+* {
+  font-family: "Mukta Mahee", sans-serif;
+}
 
 @theme inline {
   --color-light-green: #365E71;
+  --color-off-black: #010101;
+  --color-primary-black: #070707;
+  --color-off-grey: #2B3138;
+  --color-off-white: #F3F3F3;
+  --color-dark-grey: #999999;
+  --color-dark-grey-100: #C9CFDB;
+  --color-sky-blue: #43C9F8;
+  --color-dark-blue: #0B0A33;
+  --color-gray-low: #D5D6D7;
+  --color-light-black: #00000014;
+  --color-light-blue: #73dbffbd;
+  --color-light-grey: #4D4D4D;
+  --color-light-grey-100: #62656D;
+  --color-light-grey-200: #9197A6;
+  --color-light-grey-300: #929292;
+  --color-light-grey-500: #f9f9f9;
+  --color-primary-black-100: #030712;
+  --color-primary-black-200: #303233;
+  --color-primary-black-300: #333333;
+  --color-primary-grey: #9d9d9d;
+  --color-light-cream: #b3b3b3;
+  --color-grey-100: #DBDBDB;
+  --color-rich-grey: #E6E6E6;
+  --color-rich-black: #676767;
+  --color-desert-storm: #f8f8f8;
+  --color-hemlock: #616334;
+  --color-black-cow: #4a4a4a;
+  --color-mountain-mist: #959899;
+  --color-dark-indigo: #0D0A44;
+  --color-light-grey-400: #ECECEC;
+  --color-light-sky-blue: #F8FEFF;
+  --color-light-grey-600: #DEE2E6;
+  --color-grey-200: #E8EBF0;
+  --color-light-white: #F8F9FA;
+  --color-dark: #111111;
+  --color-primary-grey-100: #E5E8E8;
+  --color-green: #009F9B;
+  --color-off-grey-100: #626262;
+  --color-off-grey-7: #62656d;
+  --color-off-grey-80: #9197a6;
+  --color-grey-5: #F3F3F382;
+  --color-medium-gre: #7F7F7F;
+  --color-light-silve: #F2F2F2;
+  --color-extra-light-silve: #92929233;
+  --color-light-gree: #EBF9F1;
+  --color-medium-gree: #1F925480;
+  --color-light-purpl: #D2EAFD;
+  --color-medium-purpl: #0E2C6680;
+  --color-light-pin: #FBE7E8;
+  --color-medium-pin: #A30D1180;
+  --color-rich-green: #1F9254;
+  --color-rich-purple: #0E2C66;
+  --color-rich-pink: #A30D11;
+  --color-primary-dark: #0C0C0C;
+  --color-primary-light: #E1E1E1;
+  --color-off-grey-200: #242424;
+  --color-secondary-dark: #fff;
+  --shade-white: #EFEFEF;
+  --text-custom-xxxs: 8px;
+  --text-custom-xxs: 10px;
+  --text-custom-xs: 13px;
+  --text-custom-xsm: 19.2px;
+  --text-custom-sm: 22px;
+  --text-custom-2xl: 26px;
+  --text-custom-3xl: 28px;
+  --text-custom-4xl: 30px;
+  --text-custom-large-4xl: 32px;
+  --text-custom-4xxl: 33px;
+  --text-custom-6xl: 35px;
+  --text-custom-7xl: 36px;
+  --text-custom-8xl: 40px;
+  --text-custom-8xxl: 42px;
+  --text-custom-9xl: 46px;
+  --text-custom-9xxl: 65px;
+  --text-custom-10xl: 70px;
   --text-custom-xsm: 10px;
+  --leading-90: 90%;
+  --leading-98: 98%;
+  --leading-100: 100%;
+  --leading-116: 116%;
+  --leading-118: 118%;
+  --leading-120: 120%;
+  --leading-125: 125%;
+  --leading-126: 126%;
+  --leading-137: 137%;
+  --leading-130: 130%;
+  --leading-140: 140%;
+  --leading-146: 146%;
+  --leading-150: 150%;
+  --leading-158: 158%;
+  --leading-160: 160%;
+  --leading-165: 165%;
+  --leading-166: 166%;
+  --leading-169: 169%;
+  --leading-174: 174%;
+  --leading-182: 182%;
   --background-gradient: linear-gradient(55.27deg,
       #CCF9FF -95.26%,
       #55D0FF -28.01%,
       #7CE8FF -2.92%,
       #00ACDF 82.8%,
       #0080BF 104.02%);
+  --background-setting-gradient: linear-gradient(270.13deg, rgba(67, 201, 248, 0.5) 1.65%, rgba(255, 255, 255, 0.5) 107.45%);
   --background-image: url('/assets/images/png/grident-bg.png');
+  --background-update: url('/assets/images/webp/time-saved.webp');
+  --shadow-black-profile: 0px 4px 9.5px 0px #0000001A;
+  --shadow-sky-blue: 0px 0px 16.7px 0px #06CFF10D;
 }
 
 
@@ -25,5 +127,13 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .bg-updates {
+    background-image: var(--background-update);
+  }
+
+  .bg-setting-gradient {
+    background: var(--background-setting-gradient);
   }
 }

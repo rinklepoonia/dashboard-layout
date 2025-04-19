@@ -1,9 +1,14 @@
-import Mainlayout from "@/components/common/components/layouts/Mainlayout";
+import FileStruct from '@/components/file-struct/FileStruct'
+import Home from '@/components/home/Home'
+// import Home from '@/components/home/Home'
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <div>
-      <Mainlayout/>
-   </div>
-  );
+
+    <Home />
+
+  )
 }
+
+export default page

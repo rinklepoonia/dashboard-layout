@@ -7,15 +7,19 @@ const FileSense = () => {
   const { setIsChatbotOpen } = useStore()
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-6">FileSense</h1>
-      <button
-        onClick={() => setIsChatbotOpen(true)}
-        className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-      >
-        Open Chatbot
-      </button>
-     <ChatBot/>
+    <div>
+      <div className="p-6">
+        <h1 className="text-2xl font-bold mb-6">FileSense</h1>
+        <button
+          onClick={() => setIsChatbotOpen(true)}
+          className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+        >
+          Open Chatbot
+        </button>
+        <ChatBot />
+
+      </div>
+      <input type='file' />
     </div>
   )
 }
